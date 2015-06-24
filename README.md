@@ -21,6 +21,12 @@ filter-branch`.
 2:15 Patchwise Operations
 2:25 Rewriting History
 2:40 <Break>
+2:50 Remotes
+3:00 Remote Workflow
+3:30 Bisect
+3:40 Filter Branch
+3:50 Q&A
+4:00 <Fin>
 
 ## Keith Dahlby
 
@@ -137,4 +143,23 @@ filter-branch`.
 #### --autosquash
 
 - `rebase.autosquash = true`
+
+## Remotes
+
+## Remote Workflow
+
+### Push
+
+- `push.default = upstream`
+
+### Pull
+
+### up & pub
+
+- `alias.up = !git fetch origin --prune && git rebase origin/master && git push . origin/master:master 2> /dev/null`
+- `alias.pub = !git push origin HEAD:master && git push . HEAD:master && git checkout master`
+
+## Bisect
+
+## Filter Branch
 
