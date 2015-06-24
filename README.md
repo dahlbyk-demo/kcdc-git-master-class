@@ -1,5 +1,7 @@
 # Git `master` Class
 
+Hellow from GitHub where spelin gi s optional
+
 "It's just version control." Or is it? When I started using `git-svn` more than
 five years ago, I never imagined how fundamentally Git would change the way I
 develop software. This session will cast new light on the basic Git commands
