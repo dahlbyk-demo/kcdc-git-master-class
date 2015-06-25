@@ -159,6 +159,20 @@ filter-branch`.
 - `alias.up = !git fetch origin --prune && git rebase origin/master && git push . origin/master:master 2> /dev/null`
 - `alias.pub = !git push origin HEAD:master && git push . HEAD:master && git checkout master`
 
+#### Typical Workflow
+
+ 1. git checkout master -b new-feature
+ 2. git up
+ 3. (commit, commit, ...)
+ 4. git up (if anything interesting has happened in master)
+ 5. git push -u origin new-feature
+ 6. commit (fixup, squash), push (not -f), iterate
+ 7. "Hey team, I'm going to git up"
+ 8. git up
+ 9. git rebase -i master (fixup/squash)
+10. git push -f
+11. (git checkout master && git merge new-feature --no-ff) OR (git pub)
+
 ## Bisect
 
 ## Filter Branch
